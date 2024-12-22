@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";  // Import useNavigate from react-router-dom
 import "../stylesheets/Homepage.css";
 import HomepageListItems from "../components/homepageItemsList";
 import { UserContext } from "../utils/UserContext";
@@ -10,6 +11,8 @@ function Homepage() {
   const [topTenLost, setTopTenLost] = useState([]);
   const [lostCount, setLostCount] = useState(0);
   const [foundCount, setFoundCount] = useState(0);
+  
+  const navigate = useNavigate();  // Use navigate hook for navigation
 
   const getItems = async () => {
     const promises = [
@@ -24,6 +27,10 @@ function Homepage() {
     getItems();
   }, []);
 
+  const navigateToReport = () => {
+    navigate("/report/form");  // Navigate to the "Report New Item" page
+  };
+
   return (
     <>
       <section className="BannerBox">
@@ -32,6 +39,9 @@ function Homepage() {
             Lost <span> & </span> Found
           </h1>
           <h3>We help everyone to get their lost things !</h3>
+          <button className="reportBtn" onClick={navigateToReport}>
+          Report New Item
+        </button>
           <img
             src={
               "https://www.247software.com/hubfs/lost-and-found-software.png"
@@ -47,6 +57,7 @@ function Homepage() {
             <h3>FOUND ITEMS : {foundCount}</h3>
           </div>
         </div>
+        {/* Add the button to navigate to the Report New Item page */}
       </section>
 
       <section className="ListBox">
