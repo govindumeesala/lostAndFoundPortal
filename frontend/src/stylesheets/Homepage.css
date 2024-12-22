@@ -16,7 +16,37 @@ body {
 body::-webkit-scrollbar {
     display: none;
 }
+.reportBtn {
+    background: #0056b3; /* Blue background */
+    color: white; /* White text */
+    padding: 12px 24px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px; /* Text size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    margin-top: 20px; /* Space above the button */
+    display: inline-block; /* Display as an inline block */
+    text-align: center; /* Center text */
+  }
+  
+  .reportBtn:hover {
+    background:rgb(3, 11, 174); /* Darker blue on hover */
+    box-shadow: 0 4px 10px rgba(0, 91, 255, 0.4); /* Light shadow effect */
+    
 
+  }
+  
+  .reportBtn:active {
+    background-color: #004085; /* Darker blue when button is clicked */
+    transform: translateY(2px); /* Slightly move the button down on click */
+  }
+  
+  .reportBtn:focus {
+    outline: none; /* Remove outline on focus */
+  }
+  
 .banner {
     width: 80%;
     height: 60%;
@@ -37,6 +67,8 @@ body::-webkit-scrollbar {
     aspect-ratio: auto;
     border-top-right-radius: 50px; /* Only rounding top-right corner */
     border-bottom-right-radius: 50px;
+    border-top-left-radius: 0px; /* Only rounding top-right corner */
+    border-bottom-left-radius: 0px;
     margin-left: 37vw;
     height: 31vw;
     width: 38vw;
