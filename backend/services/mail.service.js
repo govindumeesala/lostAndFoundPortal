@@ -9,11 +9,11 @@ module.exports.mailSenderService = async (mailOptions) => {
         const oauth2Client = new OAuth2(
             process.env.CLIENT_ID1,
             process.env.CLIENT_SECRET1,
-            "https://frontend-gamma-sage.vercel.app/google"
+            "http://localhost:3000/google"
         );
 
         oauth2Client.setCredentials({
-            refresh_token: process.env.REFRESH_TOKEN
+            refresh_token: process.env._TOKEN
         });
 
         const accessToken = await oauth2Client.getAccessToken();
