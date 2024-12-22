@@ -18,10 +18,10 @@
     width: max(10vw,10vh);
     height: 4vh;
     font-size: max(1.2vw,2vh);
-    background: linear-gradient(90deg, #424242 32.77%, #101010 100%);
+    background:  linear-gradient(337deg, #00008B -36%, #ffffff 0%, #ADD8E6 82%);
     /* background:linear-gradient(90deg, #00008B -27%, #ffffff 27%, #ADD8E6 82%); */
 
-    color: white;
+    color: black;
     border-radius: 8px;
     margin-top: 2vh;
     margin-bottom: 8vh;
