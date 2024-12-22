@@ -1,6 +1,6 @@
 .about-section {
   padding: 20px;
-  background-color: #f5f9ff;
+  background: linear-gradient(337deg, #00008B -36%, #ffffff 0%, #ADD8E6 82%);;
   color: #333;
   display: flex;
   flex-direction: column;
