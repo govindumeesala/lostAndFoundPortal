@@ -1,0 +1,129 @@
+/* Container */
+.heroes-container {
+  padding: 30px;
+  max-width: 900px;
+  margin: 50px auto;
+  background: linear-gradient(337deg, #00008B -36%, #ffffff 0%, #ADD8E6 82%);
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.heroes-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #4a90e2;
+  margin-bottom: 20px;
+}
+
+/* Leaderboard */
+.heroes-leaderboard {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Podium Section */
+.heroes-podium {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.podium-place {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.podium-place .hero-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.podium-rank-1 .hero-avatar {
+  background-color: #ffd700; /* Gold */
+}
+
+.podium-rank-2 .hero-avatar {
+  background-color: #c0c0c0; /* Silver */
+}
+
+.podium-rank-3 .hero-avatar {
+  background-color: #cd7f32; /* Bronze */
+}
+
+.hero-info .hero-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.hero-info .hero-points {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Hero List */
+.heroes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hero-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hero-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero-card-rank {
+  font-size: 16px;
+  font-weight: bold;
+  color: #4a90e2;
+}
+
+.hero-card-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.hero-card-points {
+  font-size: 14px;
+  color: #777;
+}
+
+.hero-card-change {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.hero-card-change.positive {
+  color: #4caf50;
+}
+
+.hero-card-change.negative {
+  color: #f44336;
+}
