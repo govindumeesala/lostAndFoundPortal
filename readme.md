@@ -49,9 +49,3 @@
 - Wait for the maintainers to review the pull request
 - Make the changes if required
 
-
-### Contributors
-
-- [Shaswat Gupta](https://github.com/masterchief164)
-- [Utkarsh Singh](https://github.com/singhutkarshh)
-- [Srijan Singh](https://github.com/sri2dark)
